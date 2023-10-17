@@ -1,0 +1,16 @@
+body{font-weight: 300;}
+
+.bg-block{background: body(block-background);}
+
+.btn-bg-primary#{$exclude}{
+	color: contrastFW(color(white),btn(background));
+	&:hover,&:focus,&:active,&.active{
+		color: contrastFW(color(white),scale-color(btn(background),$lightness:-5));
+	}
+}
+
+.audiotrack__play{display: inline-flex; font-size: 14px; margin-left: 5px;}
+.tracks{column-count: 2; gap: 5px; padding: 0;}
+.track{display: flex;justify-content: space-between; padding: 5px 5px 5px 10px; background: $secondary; break-inside: avoid;
+	+.track{margin-top: 5px;}
+}

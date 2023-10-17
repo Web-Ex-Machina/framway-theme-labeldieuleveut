@@ -35,4 +35,7 @@ module.exports = {
 		'radius': false,
 		'font-weight': 500,
 	},
+	'track-color':'rgba(colors(white),0.4)',
+	'filll-color':'colors(white)',
+	'thumb-color':'colors(white)',
 };
